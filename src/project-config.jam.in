@@ -9,7 +9,7 @@ if ! @TOOLSET@ in [ feature.values <toolset> ]
 project : default-build <toolset>@TOOLSET@ ;
 
 # Python configuration
-using python : @PYTHON_VERSION@ : @PYTHON_EXECUTABLE@ : @PYTHON_INCLUDE_DIR@ ;
+using python : @Python3_VERSION@ : @Python3_EXECUTABLE@ : @Python3_INCLUDE_DIRS@ ;
 
 libraries =  @WITH_LIBS@ ;
 

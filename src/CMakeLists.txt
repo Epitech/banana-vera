@@ -38,7 +38,7 @@ target_link_libraries(vera
   ${TCL_LIBRARY}
   ${Boost_LIBRARIES})
 if(VERA_PYTHON)
-  target_link_libraries(vera ${PYTHON_LIBRARIES})
+  target_link_libraries(vera ${Python3_LIBRARIES})
 endif()
 if(VERA_LUA)
   target_link_libraries(vera ${LUA_LIBRARIES} ${LUABIND_LIBRARY})
