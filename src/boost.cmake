@@ -46,9 +46,9 @@ else()
     "Host used to download boost. Use it to force a specific mirror.")
   mark_as_advanced(BOOST_MIRROR)
 
-  set(Boost_VERSION 1.77.0)
-  set(Boost_URL "https://${BOOST_MIRROR}/artifactory/main/release/1.77.0/source/boost_1_77_0.tar.bz2")
-  set(Boost_URL_HASH "SHA256=fc9f85fc030e233142908241af7a846e60630aa7388de9a5fafb1f3a26840854")
+  set(Boost_VERSION 1.80.0)
+  set(Boost_URL "https://${BOOST_MIRROR}/artifactory/main/release/1.80.0/source/boost_1_80_0.tar.bz2")
+  set(Boost_URL_HASH "SHA256=1e19565d82e43bc59209a168f5ac899d3ba471d55c7610c677d4ccf2c9c500c0")
 
   string(REPLACE ${pythonLib} "python" boostLibs "${boostLibs}")
   string(REPLACE ";" "," boostLibsComma "${boostLibs}")
