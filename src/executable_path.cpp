@@ -95,7 +95,7 @@ std::string executable_path(const char *argv0)
     std::string path(buf, size);
     boost::filesystem::path full_path(
         boost::filesystem::system_complete(
-            boost::filesystem::path(path).normalize()));
+            boost::filesystem::path(path).lexically_normal()));
     return full_path.string();
 }
 
