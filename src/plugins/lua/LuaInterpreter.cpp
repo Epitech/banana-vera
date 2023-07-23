@@ -17,6 +17,7 @@
 #include <fstream>
 #include <iterator>
 #include <boost/lexical_cast.hpp>
+#define BOOST_BIND_GLOBAL_PLACEHOLDERS
 #include <boost/filesystem.hpp>
 #include <boost/algorithm/string/predicate.hpp>
 
