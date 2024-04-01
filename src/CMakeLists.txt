@@ -32,6 +32,8 @@ include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
 file(GLOB_RECURSE srcs *.cpp)
 add_executable(vera ${srcs})
+target_compile_options(vera PRIVATE -O3)
+target_link_options(vera PRIVATE -flto=auto)
 add_dependencies(vera vera ${Boost_TARGET} ${Lua_TARGET} ${Luabind_TARGET} ${Python_TARGET})
 set_target_properties(vera PROPERTIES OUTPUT_NAME vera++)
 target_link_libraries(vera
